@@ -1,0 +1,1 @@
+select b.title, s.name from book b right join students s on b.id_student = s.id;

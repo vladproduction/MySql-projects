@@ -1,0 +1,1 @@
+create view scholarship_table as select id, name, scholarship from students where scholarship > 0;
