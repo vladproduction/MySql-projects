@@ -23,9 +23,9 @@ public class DaoCustomerShopImpl implements DaoCustomerShop {
 
     @Override
     public void deleteByCustomerId(int id) throws SQLException {
-        String deleteFromShop = "DELETE FROM customer_shop WHERE customer_id = ?";
+        String sql = "DELETE FROM customer_shop WHERE customer_id = ?";
         try (Connection connection = getConnection()) {
-            PreparedStatement ps1 = connection.prepareStatement(deleteFromShop);
+            PreparedStatement ps1 = connection.prepareStatement(sql);
             ps1.setInt(1, id);
             ps1.executeUpdate();
         }
