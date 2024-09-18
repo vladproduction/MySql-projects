@@ -1,5 +1,5 @@
-    **transaction** - это набор команд, которые выполняются все вместе и если не выполняется хотя бы одна из них
-                  то не выполняются и все остальные.  
+    transaction - this is a set of commands that are executed all together and if at least one of them is not executed, then all the others are not executed;
+
     Существуют правила - ACID:
 
  - A - atomicity  набор команд воспринимается как единое целое(например перевод денег с одной
