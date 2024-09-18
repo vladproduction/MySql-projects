@@ -2,21 +2,26 @@ transaction - this is a set of commands that are executed all together and if at
 
 Rules of ACID:
 
- - A - atomicity  a set of commands is perceived as a single whole (for example, transferring money from one card to another implies two operations - withdrawal from one and crediting to another);
-Guarantees that no transaction will be recorded in the system partially. Either all of its sub-operations will be executed, or none of them will be executed.
+ - A - atomicity
+a set of commands is perceived as a single whole (for example, transferring money from one card to another 
+implies two operations - withdrawal from one and crediting to another);
+Guarantees that no transaction will be recorded in the system partially. 
+Either all of its sub-operations will be executed, or none of them will be executed.
 
- - C - consistency после завершения транзакции либо все команды должны быть выполнены, либо система
-должна быть в состоянии, в котором она была до начала операции;  committed->OK;
+ - C - consistency
+after the transaction completes, either all commands must be executed or the system
+must be in the state it was in before the operation began; committed->OK;
 rollback->smth went not OK , rejected;
-Транзакция, достигающая своего нормального завершения и, тем самым, фиксирующая свои результаты,
-сохраняет согласованность БД;
+A transaction that reaches its normal completion and thereby commits its results
+maintains database consistency;
 
- - I - isolation с БД одновременно могут работать 100 или 1000(-n) пользователей, они могут
-выполнять множество транзакций; инкапсуляция позволяет инкапсулировать промежуточные результаты одной
-транзакции от результатов другой; (законченность операции); по умолчанию имеет значение
-read committed (когда другая транзакция уже закомичена, мы не видим промежуточных);
-Во время выполнения транзакции, параллельные транзакции не должны оказывать влияние на ее результат.
+ - I - isolation
+100 or 1000(-n) users can work with the database at the same time, they can perform multiple transactions; 
+encapsulation allows encapsulating the intermediate results of one transaction from the results of another; (operation completion);
+by default, it is set to read committed (when another transaction is already committed, we do not see the intermediate ones);
+During the execution of a transaction, parallel transactions should not affect its result;
 
-- D - durability если БД закомитила транзакцию, то она ее обязана будет выполнить;
-Независимо от проблем на нижних уровнях(к примеру, обесточивание системы или сбои в оборудовании) изменения,
-сделанные успешно завершенной транзакцией, должны остаться сохраненными после возвращения системы в работу.
+- D - durability
+if the DB has committed a transaction, it will be required to execute it;
+Regardless of problems at lower levels (for example, a power outage or hardware failure), 
+the changes made by a successfully completed transaction must remain saved after the system returns to work;
