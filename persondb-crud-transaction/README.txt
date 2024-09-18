@@ -1,11 +1,9 @@
-    transaction - this is a set of commands that are executed all together and if at least one of them is not executed, then all the others are not executed;
+transaction - this is a set of commands that are executed all together and if at least one of them is not executed, then all the others are not executed;
 
-    Существуют правила - ACID:
+Rules of ACID:
 
- - A - atomicity  набор команд воспринимается как единое целое(например перевод денег с одной
-карточки на другую подразумевает две операции - снятие с одной и зачисление на другую);
-Гарантирует, что никакая транзакция не будет зафиксирована в системе частично. будут либо выполнены
-все ее подоперации, либо не выполнено ни одной.
+ - A - atomicity  a set of commands is perceived as a single whole (for example, transferring money from one card to another implies two operations - withdrawal from one and crediting to another);
+Guarantees that no transaction will be recorded in the system partially. Either all of its sub-operations will be executed, or none of them will be executed.
 
  - C - consistency после завершения транзакции либо все команды должны быть выполнены, либо система
 должна быть в состоянии, в котором она была до начала операции;  committed->OK;
