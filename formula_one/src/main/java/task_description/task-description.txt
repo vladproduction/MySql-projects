@@ -1,0 +1,42 @@
+ER Design
+
+The purpose of this task is to design database.
+Practice creating an ER diagram by defining the entities, their attributes and showing their relationships.
+
+- Choose one of the following variants of a system to design an ER diagram:
+    1)Table or Ticket Schedule simulations:
+    * Airplane tickets
+    * F1 competition
+    * Cinema tickets
+    2)Publicly available devices/services:
+    * Public WI-FI points in your city
+    * Public electric car charges in your district
+    * Public bicycle rental points in your country
+    3)Scheduling/Management systems:
+    * Food delivery management system
+    * Flowers and gifts delivery management system
+    * Robotized warehouse management
+
+- Give a high-level overview of what functions and use cases are relevant for the chosen system.
+
+- Design entities and their attributes, relationships between them. Describe them.
+
+- Draw an ER diagram depicting the designed entities, attributes (with data types), and relationships.
+  overview of ER diagrams (https://www.lucidchart.com/pages/er-diagrams).
+
+- The task should be submitted as a doc document or a pdf document.
+
+------------------------------------------------------------
+Task: ER Design F1 competition (Table or Ticket Schedule simulations).
+
+Requirements:
+- to sketch out the design of a database.
+- defining the entities, their attributes and showing their relationships.
+- give a high-level overview of functions and use cases are relevant for the ER Design F1 competition.
+- design entities and their attributes, relationships between them. Describe them.
+- draw an ER diagram depicting the designed entities, attributes (with data types), and relationships.
+
+Expect the completed task to meet the following criteria:
+- A high-level overview of functions and use cases of the chosen system should be provided.
+- Entities, their attributes, and relations should be designed and fully described.
+- An ER diagram depicting the designed entities, their attributes with data types, and relationships should be drawn.
